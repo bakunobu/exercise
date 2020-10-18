@@ -1,7 +1,7 @@
 
 from typing import Union
 
-def euc_dist(list_a: list, list_b:list) -> Union[float, int, bool]:
+def euc_dist(list_a: list, list_b:list) -> Union[float, bool]:
     if len(list_a) != len(list_b):
         return(False)
     dist = sum(list((x - y) ** 2 for x, y in zip(list_a, list_b)))
