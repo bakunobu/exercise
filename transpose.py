@@ -6,9 +6,9 @@ a = [[99, 98, 92, 94, 99, 90, 76, 92, 97, 89],
 trans_a = []
 
 for i in range(len(a[0])):
-    trans_a.append([a[0][i],
-                    a[1][i],
-                    a[2][i]],
-                   ) 
+    row = []
+    for j in range(len(a)):
+        row.append(a[j][i])
+    trans_a.append(row) 
 
 print(trans_a)
