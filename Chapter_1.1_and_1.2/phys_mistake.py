@@ -19,4 +19,6 @@ def uni_grav(m_1:float, m_2:float, r:float, G:float=const.G) -> float:
     return(force)
 
 
+# test
+print(const.G)
 print(uni_grav(1000000, 1000000, 2))
