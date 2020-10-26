@@ -3,6 +3,7 @@
 m и d, и выводящую True, если день d месяца m приходится на на 20 марта или 20 июня
 и False в противном случае
 """
+import sys
 
 def stupid_date_checker(m: int, d: int) -> bool:
     """
