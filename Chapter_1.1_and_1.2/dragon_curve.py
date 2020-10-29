@@ -29,11 +29,10 @@ def inverse_replacer(my_str:str, a:str, b:str) -> str:
         
         if my_str[i] == a:
             my_str[i] = b
-            continue
-        
+
         elif my_str[i] == b:
             my_str[i] = a
-            continue
+ 
         
     return(''.join(my_str[::-1]))
 
