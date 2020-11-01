@@ -45,7 +45,7 @@ def calc_annuity(i: float, n: int) -> float:
     return(K)
 
 
-def credit_calc(P: float, i: float, n: int) _-> None:
+def credit_calc(P: float, i: float, n: int) -> x:
     """
     A credit calculator for annual payments
     
@@ -66,7 +66,9 @@ def credit_calc(P: float, i: float, n: int) _-> None:
     prints a table
     """
     
-    i_m = i / 12
-    K = (i_m * (1 + i_m)**n) / ((1 + i_m) ** n - 1)
-    x = K * P
+    K = calc_annuity(i, n)
+    x = calc_anuuity_monthly(K, P)
+    
+    return(x)
+
     
