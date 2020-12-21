@@ -1,4 +1,3 @@
-from itertools import filterfalse
 
 
 def check_sides(a: float, b:float, c:float) -> bool:
@@ -10,7 +9,4 @@ def check_trianle(a:float, b:float, c:float) -> bool:
         if not check_sides(* x):
             return(False)
     return(True)
-
-
-
 
