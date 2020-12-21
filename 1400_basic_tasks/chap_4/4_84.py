@@ -25,7 +25,3 @@ def pricing(amt: int) -> None:
         print('{rub} {rub_ending} {kop} копейки')
     else:
         print('{rub} {rub_ending} {kop} копеек')
-    
-    
-    if kop == 0:
-        print('{rub} рублей ровно')
