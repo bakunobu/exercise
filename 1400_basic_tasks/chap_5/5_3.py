@@ -15,7 +15,7 @@ if __name__ == '__main__':
     
 
 # c
-def print_cubes(a:int=10, b:int) -> None:
+def print_cubes(b:int, a:int=10) -> None:
     for x in range(a, b+1):
         print(x ** 3)
 
