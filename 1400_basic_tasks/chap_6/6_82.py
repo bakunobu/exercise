@@ -3,17 +3,23 @@ import doctest
 
 def is_sorted(n:int, allow_eq=True) -> bool:
     '''
-    >>> is_sorted(5321)
+    >>> is_sorted(1368)
     True
-    >>> is_sorted(44321)
+    >>> is_sorted(1669)
     True
-    >>> is_sorted(1234)
+    >>> is_sorted(1782)
     False
     '''
-    prev_num = n % 10 
+    n_copy = n
+    i = 0
+    while n_copy:
+        n_copy //= 10
+        i += 1
+    prev_num = n // 10 ** (i - 1)
     while n > 10:
-        n //= 10
-        num = n % 10
+        n %= 10 ** (i - 1)
+        i -= 1
+        num = n // 10 ** (i - 1)
         if allow_eq:
             if num < prev_num:
                 return(False)
