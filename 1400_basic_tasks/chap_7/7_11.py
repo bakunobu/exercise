@@ -1,4 +1,4 @@
-my_prod = ``
+my_prod = 1
 
 
 for x in range(10):
