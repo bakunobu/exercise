@@ -1,3 +1,7 @@
+from typing import Union
+
+
+
 def get_input(message:str, is_float:bool=True) -> Union[int, float]:
     if is_float:
         while True:

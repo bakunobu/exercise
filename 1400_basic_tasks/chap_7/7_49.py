@@ -16,12 +16,14 @@ def get_input(message:str, is_float:bool=True) -> Union[int, float]:
                 return(a)
             except ValueError:
                 print('Используйте только целые числа')
-    
                 
-def calc_sum(n:int=10) -> float:
-    my_sum = 0
-    for i in range(n):
-        d = get_input('Введите число: ')
-        if d % 2 == 0:
-            my_sum += d
-    return(my_sum)
+                
+def calc_moist(n:int=30) -> float:
+    total_fall = 0
+    i = 0
+    for x in range(n):
+        a = get_input('Укажите количество осадков: ')
+        if i % 2 != 0:
+            total_fall += a
+        i += 1
+    return(total_fall)

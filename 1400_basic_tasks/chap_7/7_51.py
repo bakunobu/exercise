@@ -16,12 +16,14 @@ def get_input(message:str, is_float:bool=True) -> Union[int, float]:
                 return(a)
             except ValueError:
                 print('Используйте только целые числа')
-    
                 
-def calc_sum(n:int=10) -> float:
-    my_sum = 0
-    for i in range(n):
-        d = get_input('Введите число: ')
-        if d % 2 == 0:
-            my_sum += d
-    return(my_sum)
+                
+def calc_odd_seq() -> int:
+    total = 0
+    a = get_input('Введите число: ', False)
+    while a % 2 != 0:
+        total += a
+        a = get_input('Введите число: ', False)
+    return(total)
+
+print(calc_odd_seq())
