@@ -1,23 +1,24 @@
 from fractions import Fraction
 
 
-def calc_part() -> None:
+def calc_part_sum() -> None:
     
     while True:
         try:
             a = float(input('Введите число: '))
-            if 0 < a <= 1:
+            if a >= 1:
                 break
             else:
-                print('Число должно принадлежать интервалу от 0 до 1!')
+                print('Число должно быть не меньше единицы!')
         except ValueError:
             print('Используйте десятичные дроби с разделителем - .')
     
+    total = 0
     i = 1
-    
-    while Fraction(1 , i) >= a:
+    while total < a:
+        total += Fraction(1, i)
         i += 1
+    print(i)
+    
         
-    print(Fraction(1, i))
-        
-calc_part()
+calc_part_sum()

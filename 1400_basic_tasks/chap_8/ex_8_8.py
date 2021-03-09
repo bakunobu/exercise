@@ -6,18 +6,19 @@ def calc_part() -> None:
     while True:
         try:
             a = float(input('Введите число: '))
-            if 0 < a <= 1:
+            if 1 < a <= 1.5:
                 break
             else:
-                print('Число должно принадлежать интервалу от 0 до 1!')
+                print('Число должно принадлежать интервалу от 1 до 1.5!')
         except ValueError:
             print('Используйте десятичные дроби с разделителем - .')
     
     i = 1
     
-    while Fraction(1 , i) >= a:
+    while Fraction(1 , i) + 1 >= a:
         i += 1
-        
-    print(Fraction(1, i))
+    
+        print(i)
+    
         
 calc_part()

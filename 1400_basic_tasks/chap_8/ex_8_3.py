@@ -10,7 +10,7 @@ def calc_part() -> None:
             else:
                 print('Число должно принадлежать интервалу от 0 до 1!')
         except ValueError:
-            print('используйте десятичные дроби с разделителем - .')
+            print('Используйте десятичные дроби с разделителем - .')
     i = 1
     while Fraction(1 , i) >= a:
         print(Fraction(1, i))
