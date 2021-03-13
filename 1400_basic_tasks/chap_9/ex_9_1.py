@@ -76,4 +76,75 @@ def print_stairs() -> None:
         line = [j for j in range(2, i+2)]
         print(* line, sep=' ')
         
-print_stairs()
+# print_stairs()
+
+
+# l
+def print_three_six() -> None:
+    for i in range(3, 7):
+        line = [i for j in range(i)]
+        print(* line, sep=' ')
+        
+# print_three_six()
+
+
+# m
+def print_twenties() -> None:
+    for i in range(1, 6):
+        line = [i + 20 for j in range(i)]
+        print(* line, sep=' ')
+        
+        
+# n
+def print_eights() -> None:
+    for i in range(5):
+        line = [i + 1 for j in range(8-i)]
+        print(* line, sep=' ')
+        
+# print_eights()
+
+
+# o
+def print_decs() -> None:
+    for i in range(1, 6):
+        line = [i * 10 for j in range(i)]
+        print(* line, sep=' ')
+        
+# print_decs()
+
+
+# p
+def print_five_to_nine() -> None:
+    for i in range(5):
+        line = [5 + i for j in range(5-i)]
+        print(* line, sep=' ')
+        
+        
+# print_five_to_nine()
+
+
+# q
+def print_x_five() -> None:
+    for i in range(1, 6):
+        line = [5 * i for j in range(6-i)]
+        print(* line, sep=' ')
+        
+# print_x_five()
+
+
+# r
+def print_hund() -> None:
+    for i in range(7):
+        line = [100 + i * 10 + j for j in range(1, 6)]
+        print(* line, sep=' ')
+        
+# print_hund()
+
+
+# s
+def print_rev_dec() -> None:
+    for i in range(50, 10, -10):
+        line = [i + j for j in range(1, 9)]
+        print(* line, sep=' ')
+        
+print_rev_dec()
