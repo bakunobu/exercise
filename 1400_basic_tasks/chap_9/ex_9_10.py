@@ -1,4 +1,4 @@
-def collect_points(n:int) -> list:
+def collect_salaries(n:int) -> list:
     journal = [[] for i in range(n)]
     for i in range(n):
         msg = f'Введите зарплату {i+1} работника: '
