@@ -1,4 +1,4 @@
-def collect_studs(n:int=3, d:int=10) -> list:
+def collect_rev(n:int=3, d:int=10) -> list:
     journal = []
     for i in range(n):
         shop = []
