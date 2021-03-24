@@ -3,7 +3,9 @@ def div_to_list(n:int) -> list:
     return(div_list)
 
 i = 0
-while i < 999:
+while i < 99999:
+    if not i % 10_000:
+        print(f'{i / 100_000 * 100} % done')
     if sum(div_to_list(i)) == i:
         print(i, sum(div_to_list(i)), sep=' --> ')
     
