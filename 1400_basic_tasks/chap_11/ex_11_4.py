@@ -1,0 +1,1 @@
+my_list = ['#' for i in range(20)]
