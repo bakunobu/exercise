@@ -5,4 +5,3 @@ def odd_el(nums:list) -> None:
         print(i, i+1)
     else:
         print('Таких чисел в массиве нет!')
-        
